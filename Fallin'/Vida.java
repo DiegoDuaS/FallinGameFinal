@@ -8,9 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Vida extends Actor
 {
-    public Vida(){
-        getImage().scale(getImage().getWidth()/2,getImage().getHeight()/2);
-    }
+
     public void act()
     {
         if(getY() > 1 ){
