@@ -10,6 +10,7 @@ public class MyWorld extends World
     public static int vidas = 3; 
     public static int time = 0;
     private static final GreenfootSound cancion = new GreenfootSound("musiquita3.mp3");
+    Start inicio; 
     
     //Dandole las medidas a la pantalla principal
     public MyWorld()
@@ -70,6 +71,6 @@ public class MyWorld extends World
     //Parar la música de fondo en caso de que el juego pare. 
     public void stopped(){
         super.stopped();
-        cancion.pause();
+        inicio.cancion.pause();
     }
 }

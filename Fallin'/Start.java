@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Start extends World
 {
-
+    public static final GreenfootSound cancion = new GreenfootSound("musiquita3.mp3");
     public Start()
     {    
         super(300, 500, 1); 
@@ -24,4 +24,12 @@ public class Start extends World
         }
         
     }
+    //Correr la música de fondo.
+    public void started(){
+        super.started();
+        cancion.setVolume(40);
+        cancion.playLoop();
+    }
 }
+
+
